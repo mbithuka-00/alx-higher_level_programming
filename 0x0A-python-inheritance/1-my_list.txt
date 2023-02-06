@@ -1,12 +1,36 @@
-#!/usr/bin/python3
-# 1-my_list.py
+IMPORT
+>>> MyList = __import__('1-my_list').MyList
+>>> Module = __import__('1-my_list').__doc__
+>>> Class = __import__('1-my_list').MyList.__doc__
+>>> Function = __import__('1-my_list').MyList.print_sorted.__doc__
 
-"""Defines an inherited list class MyList."""
+TESTS
+>>> my_list = MyList()
 
+>>> my_list.append(1)
+>>> my_list.append(4)
+>>> my_list.append(2)
+>>> my_list.append(3)
+>>> my_list.append(5)
+>>> MyList.print_sorted(my_list)
+[1, 2, 3, 4, 5]
 
-class MyList(list):
-    """Implements sorted printing for the built-in list class."""
+>>> my_list = MyList()
+>>> my_list.append(-2)
+>>> my_list.append(-7)
+>>> MyList.print_sorted(my_list)
+[-7, -2]
 
-    def print_sorted(self):
-        """Print a list in sorted ascending order."""
-        print(sorted(self))
+>>> my_list = []
+>>> MyList.print_sorted(my_list)
+[]
+
+DOCSTRING
+>>> print(len(Module) > 0)
+True
+
+>>> print(len(Class) > 0)
+True
+
+>>> print(len(Function) > 0)
+True
