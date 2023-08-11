@@ -1,10 +1,9 @@
 #!/usr/bin/python3
 
-def add(a,b):
-    return a+b
-
 if __name__ == "__main__":
+    '''print the addition of two numbers'''
+    from add_0 import add
+
     a=1
     b=2
-    result = add(a ,b)
-    print(f"{a} + {b} = {result}\n")
+    print("{} + {} = {}".format(a, b, add(a, b)))
