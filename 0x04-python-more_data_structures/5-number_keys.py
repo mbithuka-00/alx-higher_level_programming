@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-#author: matt mbithuka
+# author: matt mbithuka
 def number_keys(a_dictionary):
     number = 0
     list_keys = list(a_dictionary.keys())
@@ -8,4 +8,3 @@ def number_keys(a_dictionary):
         number += 1
 
     return (number)
-
