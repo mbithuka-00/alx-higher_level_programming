@@ -5,8 +5,7 @@ import sys
 if __name__ == "__main__":
     # Import the functions for saving and loading JSON files
     save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
-    load_from_json_file = __import__(
-        '6-load_from_json_file').load_from_json_file
+    load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 
     try:
         # Attempt to load an existing JSON file, or create an empty list if it doesn't exist
@@ -19,3 +18,4 @@ if __name__ == "__main__":
 
     # Save the updated list to a JSON file
     save_to_json_file(items, "add_item.json")
+
