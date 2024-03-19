@@ -1,1 +1,1 @@
-this is my readme for the list and tuples task in  higher level programming
+this is my readme file for the data dtructures in python
