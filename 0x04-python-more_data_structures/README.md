@@ -1,1 +1,1 @@
-this is my readme file for the python alx task that deals with sets , dictionaries, lambda functions
+THIS PROJECT WE ARE GOI9NG TO LOOK AT SETS AND DICTIONARIS
